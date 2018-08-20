@@ -1,0 +1,7 @@
+### Guard::ResquePool
+#  available options:
+#  - :environment (corresponds to RAILS_ENV for the Resque worker)
+guard 'resque-pool', :environment => 'development' do
+  watch(%r{^app/(.+)\.rb$})
+  watch(%r{^lib/(.+)\.rb$})
+end
